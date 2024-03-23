@@ -1,27 +1,6 @@
 Denoising Diffusion Probabilistic Models Implementation in Pytorch
 ========
 
-This repository implements [DDPM](https://arxiv.org/abs/2006.11239) with training and sampling methods of DDPM and unet architecture mimicking the stable diffusion unet used in diffusers library from huggingface from scratch.
-
-## DDPM Explanation Videos
-<a href="https://www.youtube.com/watch?v=H45lF4sUgiE">
-   <img alt="DDPM Math Video" src="https://github.com/explainingai-code/DDPM-Pytorch/assets/144267687/27627399-ca3e-4491-a3f3-34d36e05b9cb"
-   width="300">
-</a><a href="https://www.youtube.com/watch?v=vu6eKteJWew">
-   <img alt="DDPM Implementation Video" src="https://github.com/explainingai-code/DDPM-Pytorch/assets/144267687/ebcf6a07-c84a-4219-bb2a-31fc7d60cffa"
-   width="300">
-</a>
-
-## Sample Output by trained DDPM on Mnist
-
-<img src="https://github.com/explainingai-code/DDPM-Pytorch/assets/144267687/a8095bc2-a525-40ad-a0ae-ec53da4145b5" width="300">
-
-
-## Data preparation
-For setting up the mnist dataset:
-
-Follow - https://github.com/explainingai-code/Pytorch-VAE#data-preparation
-
 ## Training on your own images
 For this one would need to make the following changes
 * Put the image files in a folder created within the repo root (example: data/images/*.png ). The data folder should only have one directory 'images'
@@ -34,10 +13,6 @@ This would work if you have .png files. If the images are of other formats or co
 
 
 # Quickstart
-* Create a new conda environment with python 3.8 then run below commands
-* ```git clone https://github.com/explainingai-code/DDPM-Pytorch.git```
-* ```cd DDPM-Pytorch```
-* ```pip install -r requirements.txt```
 * For training/sampling use the below commands passing the desired configuration file as the config argument in case you want to play with it. 
 * ```python -m tools.train_ddpm``` for training ddpm
 * ```python -m tools.sample_ddpm``` for generating images
